@@ -1,0 +1,9 @@
+box: combient/java-mvn
+dev:
+  services:
+    - id: redis
+  steps:
+    - script:
+        code: export PORT='8082'
+    - script:
+        code: 'mvn -e compile exec:java'
