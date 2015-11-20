@@ -7,7 +7,7 @@ This is an absolutely minimal example of a Java-based multi-docker application, 
 [Wercker](http://wercker.com/). It consists of two containers:    
 
 - a REST api service and 
-- a REDIS key store service. 
+- a REDIS key/value store service 
 
 The REST api contains one resource which increments a page-hit counter in the REDIS service and prints a greeting 
 containing this counter in a text/html response.
@@ -40,7 +40,7 @@ Check your environment variables and make note of the IP assigned to your docker
  
     http://<ip of your docker-machine>:8082/hello
     
-    The IP is typically 192.168.99.100. To make sure:
+The IP is typically 192.168.99.100. To make sure:
     
     $ env|grep 'DOCKER_HOST'
     
