@@ -3,7 +3,7 @@
 
 [![wercker status](https://app.wercker.com/status/52084dac602bd0033c8ddec62ce72fd1/m "wercker status")](https://app.wercker.com/project/bykey/52084dac602bd0033c8ddec62ce72fd1)
 
-This is an absolutely minimal example of a Java-based multi-docker application, under Continous Integration by
+This is an absolutely minimal example of a Java-based multi-docker application, under Continuous Integration by
 [Wercker](http://wercker.com/). It consists of two containers:    
 
 - a REST api service and 
@@ -39,6 +39,10 @@ Check your environment variables and make note of the IP assigned to your docker
  You should now be able to visit
  
     http://<ip of your docker-machine>:8082/hello
+    
+    The IP is typically 192.168.99.100. To make sure:
+    
+    $ env|grep 'DOCKER_HOST'
     
 ## Known issues
 
